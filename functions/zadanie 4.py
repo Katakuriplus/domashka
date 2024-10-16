@@ -10,5 +10,4 @@ def process_order(*products, **customer_info):
     print("surname: " + surname)
 
 
-# Пример использования
 process_order('Пицца', 'Суши',"Роллы", name='Райан', surname='Гослинг')
