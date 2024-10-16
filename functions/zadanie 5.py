@@ -1,11 +1,19 @@
+def sum(number1,number2):
+    return number1 + number2
+def minus(number1, number2):
+    return number1 - number2
+def multiply(number1, number2):
+    return number1*number2
+def divide(number1, number2):
+    return number1 / number2
+
 def calculator(number1,number2, operation):
     if operation == "/":
-        result = number1/number2
+        return divide(number1, number2)
     elif operation == "*":
-        result = number1*number2
+        return multiply(number1, number2)
     elif operation == "-":
-        result = number1 - number2
+        return minus(number1, number2)
     else:
-        result = number2+number1
-    return result
-print(calculator(5,6,"*"))
+        return sum(number1, number2)
+print(calculator(5,6,"-"))
